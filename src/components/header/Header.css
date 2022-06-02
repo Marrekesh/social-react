@@ -1,0 +1,21 @@
+.header-wrapper {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(209, 207, 207, 0.5);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header__nav-item {
+    display: flex;
+    margin-right: 15px;
+}
+
+.header__nav-item-search {
+    flex-grow: 1;
+}
