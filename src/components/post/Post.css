@@ -1,0 +1,16 @@
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    border-left: 1px solid rgb(61, 171, 223);
+    border-right: 1px solid rgb(61, 171, 223);
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.post .post__text{
+    padding-right: 10px;
+    text-align: justify;
+}

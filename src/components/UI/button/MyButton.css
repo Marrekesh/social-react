@@ -1,7 +1,45 @@
-.my-button {
+/* .my-button {
     padding: 5px;
     border: 1px solid rgb(47, 166, 182);
     background: none;
     cursor: pointer;
     color: rgb(47, 166, 182);
+} */
+
+.my-button {
+    position: relative;
+    z-index: 1;
+    background: none;
+    color: white;
+    border: #262626;
+    padding: 10px;
+    cursor: pointer;
 }
+
+.my-button::before,
+.my-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.my-button::after {
+    background-color: #262626;
+    
+}
+
+.my-button::before {
+    background-image: linear-gradient(to bottom right, #aeffb9 0%, #a091ff 100%);
+    transition: transform 200ms;
+}
+
+.my-button:hover::before,
+.my-button:focus::before {
+    transform: scale(1.1);
+}
+
+/* .my-button::hover {
+    border: 5px solid red;
+} */

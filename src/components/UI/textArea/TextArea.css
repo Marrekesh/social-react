@@ -1,0 +1,20 @@
+.textArea {
+    padding: 5px;
+    resize: none;
+    color: rgb(61, 171, 223);
+    border: 1px solid rgb(205, 231, 243);
+    /* background-color: rgb(205, 231, 243); */
+    border-radius: 5px;
+    max-width: 500px;
+    margin-bottom: 15px;        
+}
+
+.textArea:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px rgb(61, 171, 223);
+    
+}
+
+.textArea::placeholder {
+    color: rgb(61, 171, 223);
+}
