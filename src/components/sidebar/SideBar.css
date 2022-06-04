@@ -2,6 +2,7 @@
     padding: 10px;
     background-color: #262626;
     border-radius: 5px;
+    height: 500px;
 }
 
 .side-bar .side-bar__ol {
@@ -18,7 +19,7 @@
 
 .side-bar .side-bar__item .side-bar__icon {
     color: #fff;
-    margin-right: 5px;    
+    margin-right: 10px;    
 }
 
 .side-bar .side-bar__item .side-bar__link {

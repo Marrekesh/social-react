@@ -1,6 +1,6 @@
 import './MyProfile.css'
-import AddPost from '../addPosts/AddPost'
-import Posts from '../posts/Posts'
+import AddPost from '../../addPosts/AddPost'
+import Posts from '../../posts/Posts'
 const MyProfile = () => {
     return (
         <div className="my-profile">
@@ -9,7 +9,7 @@ const MyProfile = () => {
             </div>
 
             <div className='my-profile__info-block'>
-                <img className='my-profile__img' src="https://sun9-82.userapi.com/s/v1/if1/FN64PxKarvTpcyJREDwwPprzikfCCucpmbkFnPgE-tZ5uv_9X5H8vMr1o2Xc8UkU0EXOXNuE.jpg?size=810x1080&quality=96&type=album" alt="avatar"/>
+                <img className='my-profile__img' src="https://static.wikia.nocookie.net/sims/images/3/33/John_Doe.png/revision/latest?cb=20140615075344&path-prefix=ru" alt="avatar"/>
                 <div className='my-profile__text-block'>
                     <span className='my-profile__text-name'>Дмитрий</span>
                     <span className='my-profile__text-info'>Лондон</span>

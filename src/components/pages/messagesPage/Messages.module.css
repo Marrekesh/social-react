@@ -1,0 +1,47 @@
+.messages {
+    display: grid;
+    grid-template-columns: 2.5fr 10fr;
+    grid-gap: 10px;
+    min-height: 80vh;
+}
+
+.messagesItem {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black ;
+    padding-right: 10px;
+}
+
+/* sdsd */
+.messagesLink {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.messagesLink:hover {
+    box-shadow: 0 0 10px 5px #a091ff;
+}
+
+
+.messagesImg {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.messagesName {
+    color: black;
+}
+
+.messagesMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
