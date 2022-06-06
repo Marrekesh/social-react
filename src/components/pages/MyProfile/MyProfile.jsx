@@ -5,7 +5,7 @@ const MyProfile = () => {
     return (
         <div className="my-profile">
             <div className="my-profile__block-img">
-                <img className="my-profile__img" src="https://media.tproger.ru/uploads/2016/10/reactmini.png" alt="react" />
+                <img className="my-profile__img" src="https://img.gazeta.ru/files3/839/7947839/upload-shutterstock_109674992-pic905v-895x505-10385.jpg" alt="react" />
             </div>
 
             <div className='my-profile__info-block'>

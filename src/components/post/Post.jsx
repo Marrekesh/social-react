@@ -1,11 +1,20 @@
 import './Post.css'
 import MyButton from "../UI/button/MyButton"
+import { useDispatch } from 'react-redux'
+import { deletePostAction } from '../../store/posts/postReducer'
 
-const Post = () => {
+const Post = ({text, id}) => {
+
+    const dispatch = useDispatch()
+
+    const deletePost = (post) => {
+        dispatch(deletePostAction(post))
+    }
+
     return (
         <div className="post">
-            <div className='post__text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut commodi saepe nemo similique natus cum non tempora, sit excepturi explicabo! Non magni at facere necessitatibus, recusandae ea tenetur ratione praesentium.</div>
-            <MyButton>Удалить</MyButton>
+            <div className='post__text'>{text}</div>
+            <MyButton onClick={() => deletePost(id)}>Удалить</MyButton>
         </div>
     )
 }
