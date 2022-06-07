@@ -1,7 +1,9 @@
 import './MyProfile.css'
 import AddPost from '../../addPosts/AddPost'
 import Posts from '../../posts/Posts'
+import useHTTP from '../../hooks/useHTTP.hook'
 const MyProfile = () => {
+
     return (
         <div className="my-profile">
             <div className="my-profile__block-img">
@@ -20,6 +22,9 @@ const MyProfile = () => {
             <h3 style={{marginBottom: '10px'}}>Мои посты</h3>
             <AddPost/>
             <Posts/>
+            
+
+            
 
         </div>
     )
