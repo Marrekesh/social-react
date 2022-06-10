@@ -36,7 +36,7 @@ const AddPost = () => {
                 onChange={e => addText(e.target.value)} 
                 placeholder='Введите текст'
                 />
-                <div><MyButton onClick={createPost}>Добавить</MyButton></div>  
+                <div><MyButton className="my-button" onClick={createPost}>Добавить</MyButton></div>  
             </form>
 
             

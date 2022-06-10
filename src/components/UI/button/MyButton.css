@@ -14,6 +14,27 @@
     border: #262626;
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 200ms ease-in;
+}
+
+.my-button.width {
+    width: 100%;
+}
+
+.my-button.white {
+    color:#262626;
+    border: 1px solid #262626;
+}
+
+.my-button.width:hover::before {
+    transform: scale(1);
+    box-shadow: 0 0 10px #262626;
+    transition: all 200ms ease-in;
+}
+
+.my-button.white::after {
+    background-color: #ffffff;  
 }
 
 .my-button::before,
@@ -26,8 +47,7 @@
 }
 
 .my-button::after {
-    background-color: #262626;
-    
+    background-color: #262626;  
 }
 
 .my-button::before {
@@ -35,9 +55,9 @@
     transition: transform 200ms;
 }
 
-.my-button:hover::before,
-.my-button:focus::before {
-    transform: scale(1.1);
+
+.my-button:hover::before {
+    transform: scale(1.08);
 }
 
 /* .my-button::hover {

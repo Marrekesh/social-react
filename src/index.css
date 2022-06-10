@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
 
+*{
+	font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
 
 body {
   margin: 0;
@@ -12,7 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aliceblue;
+  background-color: #fff;
 }
 
 code {

@@ -3,33 +3,42 @@ import Post from '../post/Post'
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { fetchPosts } from '../../store/asyncActions/posts'
-import useHTTP from '../hooks/useHTTP.hook'
 
+import { fetchingPosts } from '../../store/posts/postReducer'
+import useHTTP from '../hooks/useHTTP.hook'
+import Spinner from '../UI/spinner/Spinner'
 const Posts = () => {
 
-    const {request, loading} = useHTTP()
+    const {request} = useHTTP()
 
     const dispatch = useDispatch()
     const posts = useSelector(state => state.posts.posts)
+    const loading = useSelector(state => state.posts.loadingPostStatus)
 
     useEffect(() => {
-        dispatch( fetchPosts(request))
-    }, [dispatch])
+        dispatch(fetchingPosts())
+        dispatch(fetchPosts(request))
+    }, [])
+
+    if (loading === 'loading') {
+        return <Spinner/>
+    }
+
+    const render = () => {
+
+        if (posts.length === 0) {
+            return <h3>Добавьте посты</h3>
+        } 
+
+        return posts.map(post => 
+            <Post key={post.id} id={post.id} text={post.title}/>
+        )
 
 
+    }
     return (
         <div className="posts">
-
-            {posts.length 
-            ?   posts.map(post => {
-                    return <Post key={post.id} id={post.id} text={post.title}/>
-                })
-
-            :   <h3>Нет постов</h3>
-
-            }
-        
-            
+            {render()}
         </div>
     )
 }

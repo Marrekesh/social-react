@@ -22,12 +22,15 @@ const Header = () => {
                             <MyInput type='text' placeholder="Поиск"/>
                         </li> */}
                         <li className='header__nav-item'>
-                            <MyButton>Выйти</MyButton>
+                            <MyButton className="my-button">Выйти</MyButton>
                         </li>
                     </ul>
                 </header>
-            </div>
+            <hr/>     
+            </div>   
         </div>
+
+        
     )
 }
 

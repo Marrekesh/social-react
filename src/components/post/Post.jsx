@@ -14,7 +14,7 @@ const Post = ({text, id}) => {
     return (
         <div className="post">
             <div className='post__text'>{text}</div>
-            <MyButton onClick={() => deletePost(id)}>Удалить</MyButton>
+            <MyButton className="my-button" onClick={() => deletePost(id)}>Удалить</MyButton>
         </div>
     )
 }
